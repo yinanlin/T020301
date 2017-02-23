@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         Log.d("Learn","onResume()"); // debug purpose
+        // This is a GIT test comment
     }
 
     @Override
