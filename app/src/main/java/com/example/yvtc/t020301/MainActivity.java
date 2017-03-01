@@ -1,7 +1,10 @@
 package com.example.yvtc.t020301;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,7 +14,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.d("Learn","onCreate"); // debug purpose
     }
-
+    public void click1(View v) {
+        Intent it = new Intent(MainActivity.this, Main2Activity.class);
+        startActivity(it);
+    }
     @Override
     protected void onStart() {
         super.onStart();
